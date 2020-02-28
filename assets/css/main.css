@@ -94,6 +94,7 @@ footer a {
 	color: white;
 	font-size: 14px;
 	margin-left: 10px;
+	margin-bottom: 10px
 }
 
 footer p {
@@ -112,6 +113,29 @@ footer a:hover {
 .social img:hover {
 	background-color: #494949;
 	border-radius: 50%;
+}
+
+.gallery {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px
+}
+
+.photo-item {
+	width: 24%;
+	margin-left: 5px;
+}
+
+.photo-item img {
+	box-sizing: border-box;
+	max-width: 100%;
+	opacity: .7;
+}
+
+.photo-item img:hover {
+	opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -149,6 +173,11 @@ footer a:hover {
 	.advantages__items {
 		width: 45%;
 	}
+
+	.photo-item {
+		width: 45%;
+		margin-left: 10px;
+	}
 }
 
 @media screen and (max-width: 420px) {
@@ -159,5 +188,21 @@ footer a:hover {
   
   	.advantages__items {
 		width: 100%;
+	}
+
+	.project {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.gallery {
+		width: auto;
+		margin: auto;	
+	}
+
+	.photo-item {
+		width: 70%;
+		margin: 0 auto;
 	}
 }
